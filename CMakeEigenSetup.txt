@@ -1,0 +1,29 @@
+# * ***************************************************************************
+# *
+# *  Copyright (C) 2017 University of Dundee
+# *  All rights reserved. 
+# *
+# *  This file is part of RheoVM (Rheology of Vertex Model) program.
+# *
+# *  RheoVM is free software; you can redistribute it and/or modify
+# *  it under the terms of the GNU General Public License as published by
+# *  the Free Software Foundation; either version 2 of the License, or
+# *  (at your option) any later version.
+# *
+# *  RheoVM is distributed in the hope that it will be useful,
+# *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+# *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# *  GNU General Public License for more details.
+# *
+# *  You should have received a copy of the GNU General Public License
+# *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# *
+# * ****************************************************************************/
+
+find_package (Eigen3 3.3 NO_MODULE)
+if (TARGET Eigen3::Eigen)
+  add_definitions(-DHAS_EIGEN3)
+  INCLUDE_DIRECTORIES ( "${EIGEN3_INCLUDE_DIRS}" )
+else (TARGET Eigen3::Eigen)
+  MESSAGE("Eigen3 library not found. Please install it is you want to use the RelVelocity integrator.")
+endif (TARGET Eigen3::Eigen)
