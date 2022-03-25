@@ -107,7 +107,7 @@ namespace RheoVM
 
 }
 
-PYBIND11_MODULE(RheoVM, m)
+PYBIND11_MODULE(rheovm, m)
 {
   RheoVM::export_Vec(m);
   RheoVM::export_Box(m);

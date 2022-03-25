@@ -25,10 +25,6 @@
 include_directories(${RheoVM_SOURCE_DIR}/
                     )
 
-# list of all sources in various source directories
-#file(GLOB SAMoS_SRCS ${SAMoS_SOURCE_DIR}/src/*.cpp ${SAMoS_SOURCE_DIR}/src/*.hpp)
-#file(GLOB INITIAL_CONFIGURATION_BUILDER_SRC ${SAMoS_SOURCE_DIR}/utils)
-
 #######################
 ## Configure the version info header file
 

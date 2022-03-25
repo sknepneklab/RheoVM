@@ -19,8 +19,13 @@
 
 ## Running the code
 
-- Once compiled, you will find a file called RheoVM.so in the build directory.
-- Make sure that you PYTHONPATH environment variable points to the build directory or move the RheoVM.so file somewhere where Python can find it
+- Once compiled, you will find a file called rheovm.so in the build directory.
+- Make sure that you PYTHONPATH environment variable points to the build directory or move the rheovm.so file somewhere where Python can find it
 - in the directory makeconf you will find tools that create the initial configurations
 - in the directory runscripts you will find several examples of Python scripts used to run simulations
 - in the directory analysis you will find examples of MATLAB scripts used to analyse results. 
+
+## Contributors
+
+Rastko Sknepnek (University of Dundee) - RheoVM code and initial configuration builders
+Sijie Tong (Princeton University) - runs and analysis code 

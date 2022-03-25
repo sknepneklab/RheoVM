@@ -33,7 +33,7 @@ else(VTK_FOUND)
   message("VTK not found on the system. It will be downloaded in compiled locally. It may take a while.")
   include(ExternalProject)
   set(EXTERNAL_INSTALL_LOCATION ${CMAKE_BINARY_DIR}/extern/VTK)
-  set(VTK_version 8.2)
+  set(VTK_version 9.0)
   ExternalProject_Add(VTKLocal
     GIT_REPOSITORY https://github.com/Kitware/VTK.git
     GIT_TAG v${VTK_version}.0
