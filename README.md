@@ -27,5 +27,5 @@
 
 ## Contributors
 
-Rastko Sknepnek (University of Dundee) - RheoVM code and initial configuration builders
-Sijie Tong (Princeton University) - runs and analysis code 
+- Rastko Sknepnek (University of Dundee) - RheoVM code and initial configuration builders
+- Sijie Tong (Princeton University) - runs and analysis code 

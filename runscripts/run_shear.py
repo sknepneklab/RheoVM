@@ -1,5 +1,5 @@
 # Import sys and os for data output paths
-import sys
+import sys as s
 import os
 import numpy as np
 
