@@ -7,6 +7,10 @@ import numpy as np
 # Plase make sure to have typed in your shell export PYTHONPATH=$PYTHONPATH:/path/to/the/rheovm/build ( you need to do this only once)
 from rheovm import *
 
+arglist = s.argv
+exponent = int(arglist[1])
+num_period = int(arglist[2])
+
 # This is where we start a simulation
 
 tissue = Tissue()           # initialise mesh 
@@ -47,8 +51,8 @@ d.set_sfc(1.0)
 
 
 gamma = 0.001*0.01*0.01   #magnitude of the shear
-num_period = 20
-T = 2**0                #length of the period
+#num_period = 20
+T = 2**exponent/4                #length of the period
 omega = 2*np.pi/T
 pts_period = int(T/dt)   #number of steps per period
 
